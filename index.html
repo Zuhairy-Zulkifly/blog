@@ -9,27 +9,76 @@
 <body>
     <header>
         <nav>
-            <div class="logo">Zuhairy Portfolio</div>
+            <div class="logo">ZUHAIRY.DEV</div>
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm Zuhairy Zulkifly</h1>
-            <p>University Student & Aspiring Software Developer</p>
-            <p>Welcome to my personal blog where I share my journey in tech.</p>
-            <a href="blog.html" class="btn">Read My Blog</a>
-        </div>
-    </section>
+    <main>
+        <!-- HOME SECTION -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p>Hello World, I'm</p>
+                <h1>Zuhairy Zulkifly</h1>
+                <p>University Student & Aspiring Software Developer</p>
+                <a href="#about" class="btn">View Portfolio</a>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="glass-card">
+                <p>I am a student at <strong>Universiti Sultan Zainal Abidin (UniSZA)</strong> pursuing my degree in Information Technology. I have a strong passion for solving real-world problems through code, particularly in mobile development and machine learning.</p>
+                
+                <div class="skills-container">
+                    <span class="skill-badge">Flutter & Dart</span>
+                    <span class="skill-badge">Python (Scikit-learn)</span>
+                    <span class="skill-badge">Ubuntu Server</span>
+                    <span class="skill-badge">HTML/CSS/JS</span>
+                    <span class="skill-badge">Firebase</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOG SECTION -->
+        <section id="blog">
+            <h2 class="section-title">Latest Articles</h2>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <span class="meta">PROJECT LOG • MAY 2026</span>
+                    <h3>SmartTacts: AI for Futsal</h3>
+                    <p>Exploring the integration of Random Forest algorithms within a Flutter mobile environment to provide real-time tactical suggestions.</p>
+                </div>
+                <div class="blog-card">
+                    <span class="meta">TUTORIAL • APRIL 2026</span>
+                    <h3>Server Monitoring 101</h3>
+                    <p>A comprehensive guide on setting up Prometheus and Grafana on an Ubuntu Server to monitor cloud infrastructure performance.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact">
+            <h2 class="section-title">Connect With Me</h2>
+            <div class="glass-card">
+                <form class="contact-form">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <textarea placeholder="Tell me about your project..." rows="5" required></textarea>
+                    <button type="button" class="btn" style="border:none; cursor:pointer; width:100%;">Initiate Contact</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2026 Zuhairy Zulkifly. Built for CSD 34203.</p>
+        <p>&copy; 2026 Zuhairy Zulkifly. Built with Passion for CSD 34203.</p>
     </footer>
 </body>
 </html>
