@@ -1,84 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zuhairy Zulkifly | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Zuhairy Zulkifly | Premium Portfolio</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+    <link rel="stylesheet" href="style.css"/>
 </head>
+
 <body>
+
+    <div class="bg-grid"></div>
+    <div class="blur-orb orb1"></div>
+    <div class="blur-orb orb2"></div>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
     <header>
         <nav>
-            <div class="logo">ZUHAIRY.DEV</div>
+            <div class="logo">
+                Zuhairy<b>.Zulkifly</b>
+            </div>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#blog">Blog</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li>
+                    <button id="theme-toggle" class="theme-btn">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <!-- HOME SECTION -->
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <p>Hello World, I'm</p>
-                <h1>Zuhairy Zulkifly</h1>
-                <p>University Student & Aspiring Software Developer</p>
-                <a href="#about" class="btn">View Portfolio</a>
+    <section class="hero" id="home">
+        <div class="hero-content" data-aos="zoom-in">
+            <div class="tag">
+                078647 ZUHAIRY ZULKIFLY
             </div>
-        </section>
+            <h1 class="gradient-text">
+                Building Digital<br>
+                Experiences.
+            </h1>
+            <p class="hero-desc">
+                I'm Zuhairy Zulkifly, a software developer focused on Flutter mobile applications, Machine Learning integration, and modern UI engineering.
+            </p>
 
-        <!-- ABOUT SECTION -->
-        <section id="about">
-            <h2 class="section-title">About Me</h2>
-            <div class="glass-card">
-                <p>I am a student at <strong>Universiti Sultan Zainal Abidin (UniSZA)</strong> pursuing my degree in Information Technology. I have a strong passion for solving real-world problems through code, particularly in mobile development and machine learning.</p>
-                
-                <div class="skills-container">
-                    <span class="skill-badge">Flutter & Dart</span>
-                    <span class="skill-badge">Python (Scikit-learn)</span>
-                    <span class="skill-badge">Ubuntu Server</span>
-                    <span class="skill-badge">HTML/CSS/JS</span>
-                    <span class="skill-badge">Firebase</span>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    View Projects <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    Contact Me
+                </a>
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <h2>Flutter</h2>
+                    <p>Mobile Apps</p>
+                </div>
+                <div class="stat">
+                    <h2>AI / ML</h2>
+                    <p>Predictive Analytics</p>
+                </div>
+                <div class="stat">
+                    <h2>2026</h2>
+                    <p>Available for Work</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- BLOG SECTION -->
-        <section id="blog">
-            <h2 class="section-title">Latest Articles</h2>
-            <div class="blog-grid">
-                <div class="blog-card">
-                    <span class="meta">PROJECT LOG • MAY 2026</span>
-                    <h3>SmartTacts: AI for Futsal</h3>
-                    <p>Exploring the integration of Random Forest algorithms within a Flutter mobile environment to provide real-time tactical suggestions.</p>
+    <section id="about">
+        <h2 class="section-title" data-aos="fade-right">
+            Behind The Code
+        </h2>
+        <p class="section-sub" data-aos="fade-right">
+            Passionate about structured application development, intelligence integration, and immersive user experiences.
+        </p>
+
+        <div class="bento-grid">
+            <div class="card large" data-aos="fade-up">
+                <div class="card-icon">
+                    <i class="fa-solid fa-user"></i>
                 </div>
-                <div class="blog-card">
-                    <span class="meta">TUTORIAL • APRIL 2026</span>
-                    <h3>Server Monitoring 101</h3>
-                    <p>A comprehensive guide on setting up Prometheus and Grafana on an Ubuntu Server to monitor cloud infrastructure performance.</p>
+                <h3>About Me</h3>
+                <p>
+                    I'm Zuhairy Zulkifly, a developer currently pursuing a degree related to Software Engineering at UniSZA. I specialize in merging mobile development with back-end artificial intelligence to solve complex coordination problems.
+                </p>
+            </div>
+
+            <div class="card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <h3>Tech Stack</h3>
+                <p>
+                    Flutter, Dart, Python, Firebase, Scikit-learn, Git, Android Studio, and Ubuntu Server.
+                </p>
+            </div>
+
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-icon">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+                <h3>Specialization</h3>
+                <p>
+                    Predictive modeling, responsive mobile UI/UX architectures, and structural software design using standard SDLC methods.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title" data-aos="fade-right">
+            Featured Projects
+        </h2>
+        <p class="section-sub" data-aos="fade-right">
+            How I architect and break down mobile development alongside machine learning environments.
+        </p>
+
+        <div class="bento-grid">
+            <div class="card large project-card" data-aos="fade-up">
+                <div class="project-glow"></div>
+                <span class="meta">FLAGSHIP CAPSTONE • FLUTTER & AI</span>
+                <h3>SmartTacts</h3>
+                <p>
+                    An AI-powered futsal tactical and training plan recommendation mobile system. Developed using the Flutter framework to provide real-time strategic recommendations through intuitive user interfaces.
+                </p>
+                <div class="project-links">
+                    <a href="#" class="read-more">
+                        Source Code <i class="fa-brands fa-github"></i>
+                    </a>
+                   <a href="https://github.com/Zuhairy-Zulkifly/smarttacts/releases/download/V1.0/app-release.apk" 
+   class="read-more download-btn" 
+   target="_blank" 
+   rel="noopener noreferrer">
+   Download Physical APK <i class="fa-solid fa-download"></i>
+</a>
                 </div>
             </div>
-        </section>
 
-        <!-- CONTACT SECTION -->
-        <section id="contact">
-            <h2 class="section-title">Connect With Me</h2>
-            <div class="glass-card">
+            <div class="card" data-aos="fade-up" data-aos-delay="100">
+                <span class="meta">MACHINE LEARNING</span>
+                <h3>Predictive Engine</h3>
+                <p>
+                    Integrated Random Forest and Decision Tree classification algorithms to process system parameters, instantly auto-suggesting tailored tactical layouts.
+                </p>
+            </div>
+
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
+                <span class="meta">DEVOPS & INFRASTRUCTURE</span>
+                <h3>Server Monitoring</h3>
+                <p>
+                    High-efficiency backend resource tracking dashboard leveraging Prometheus and Grafana on Ubuntu Server environments.
+                </p>
+            </div>
+
+            <div class="card large" data-aos="fade-up" data-aos-delay="300">
+                <span class="meta">SYSTEM ARCHITECTURE</span>
+                <h3>Waterfall SDLC & Engineering Documentation</h3>
+                <p>
+                    Engineered through a structured Waterfall model approach. Backed by rigorous software engineering documentation, including extensive Data Flow Diagrams (DFD) and relational Entity Relationship Diagrams (ERD).
+                </p>
+            </div>
+
+            <div class="card" data-aos="fade-up" data-aos-delay="400">
+                <span class="meta">UI/UX EXPERIMENT</span>
+                <h3>Premium Bento UI</h3>
+                <p>
+                    An experimental futuristic glassmorphism interface system leveraging native CSS layers.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title" data-aos="fade-right">
+            Let's Build Something
+        </h2>
+
+        <div class="bento-grid">
+            <div class="card" data-aos="fade-right">
+                <div class="card-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <h3>Location & Focus</h3>
+                <p>
+                    Kuala Terengganu, Terengganu, Malaysia 🇲🇾<br><br>
+                    Open for mobile application engineering collaborations and AI analytical systems.
+                </p>
+            </div>
+
+            <div class="card large" data-aos="fade-left">
                 <form class="contact-form">
-                    <input type="text" placeholder="Full Name" required>
-                    <input type="email" placeholder="Email Address" required>
-                    <textarea placeholder="Tell me about your project..." rows="5" required></textarea>
-                    <button type="button" class="btn" style="border:none; cursor:pointer; width:100%;">Initiate Contact</button>
+                    <div class="form-row">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <textarea rows="6" placeholder="Tell me about your project or mobile infrastructure requirements..."></textarea>
+                    <button class="btn btn-primary" type="submit">
+                        Send Message
+                    </button>
                 </form>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2026 Zuhairy Zulkifly. Built with Passion for CSD 34203.</p>
+        <p>
+            © 2026 Zuhairy Zulkifly — Designed & Engineered with Precision.
+        </p>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        // ===============================
+        // AOS INITIALIZATION
+        // ===============================
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // ===============================
+        // THEME TOGGLE
+        // ===============================
+        const toggleBtn = document.getElementById("theme-toggle");
+        const body = document.body;
+
+        toggleBtn.addEventListener("click", () => {
+            if (body.getAttribute("data-theme") === "light") {
+                body.removeAttribute("data-theme");
+                toggleBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
+            } else {
+                body.setAttribute("data-theme", "light");
+                toggleBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+            }
+        });
+
+        // ===============================
+        // PREMIUM LERP CURSOR
+        // ===============================
+        const dot = document.querySelector(".cursor-dot");
+        const outline = document.querySelector(".cursor-outline");
+
+        let mouseX = 0;
+        let mouseY = 0;
+        let outlineX = 0;
+        let outlineY = 0;
+
+        window.addEventListener("mousemove", (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            dot.style.left = mouseX + "px";
+            dot.style.top = mouseY + "px";
+        });
+
+        function animateCursor() {
+            outlineX += (mouseX - outlineX) * 0.08;
+            outlineY += (mouseY - outlineY) * 0.08;
+            outline.style.left = outlineX + "px";
+            outline.style.top = outlineY + "px";
+            requestAnimationFrame(animateCursor);
+        }
+        animateCursor();
+
+        // ===============================
+        // HOVER INTERACTIONS
+        // ===============================
+        const hoverTargets = document.querySelectorAll("a, button, .card, input, textarea");
+        hoverTargets.forEach((item) => {
+            item.addEventListener("mouseenter", () => {
+                outline.classList.add("cursor-hover");
+                dot.style.transform = "translate(-50%, -50%) scale(2.5)";
+            });
+            item.addEventListener("mouseleave", () => {
+                outline.classList.remove("cursor-hover");
+                dot.style.transform = "translate(-50%, -50%) scale(1)";
+            });
+        });
+
+        // ===============================
+        // MAGNETIC PHYSICS EFFECT
+        // ===============================
+        const magneticItems = document.querySelectorAll(".btn, .card");
+        magneticItems.forEach((item) => {
+            item.addEventListener("mousemove", (e) => {
+                const rect = item.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const moveX = (x - rect.width / 2) / 12;
+                const moveY = (y - rect.height / 2) / 12;
+
+                item.style.transform = `translate(${moveX}px, ${moveY}px)`;
+                item.style.setProperty("--x", `${x}px`);
+                item.style.setProperty("--y", `${y}px`);
+            });
+
+            item.addEventListener("mouseleave", () => {
+                item.style.transform = "translate(0px, 0px)";
+            });
+        });
+
+        // ===============================
+        // HERO PARALLAX
+        // ===============================
+        const hero = document.querySelector(".hero-content");
+        window.addEventListener("mousemove", (e) => {
+            const x = (window.innerWidth / 2 - e.pageX) / 40;
+            const y = (window.innerHeight / 2 - e.pageY) / 40;
+            hero.style.transform = `translate(${x}px, ${y}px)`;
+        });
+    </script>
 </body>
 </html>
