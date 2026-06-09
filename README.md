@@ -94,19 +94,18 @@ A mobile application designed to simplify expense management among housemates by
 git clone https://github.com/Zuhairy-Zulkifly/blog
 ```
 
-### Open the Project
-
-Navigate to the project folder and open:
-
-```bash
-index.html
-```
-
 using any modern web browser.
 
 Alternatively, deploy the project using GitHub Pages.
 
 ---
+
+## Live Demo
+
+https://zuhairy-zulkifly.github.io/blog/ 
+
+---
+
 
 ## Challenges Faced
 
@@ -133,13 +132,6 @@ Alternatively, deploy the project using GitHub Pages.
 * Enhance accessibility compliance.
 * Implement dynamic project loading using JSON data.
 
----
-
-## Live Demo
-
-https://zuhairy-zulkifly.github.io/blog/ 
-
----
 
 ## Author
 
