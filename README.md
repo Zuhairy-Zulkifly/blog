@@ -1,20 +1,33 @@
-# Personal Blog Portfolio - Zuhairy Zulkifly
+# Zuhairy Zulkifly – Premium Portfolio
 
-## Project Overview
-This is a personal blog website developed for the course **CSD 34203 Special Topics in Software Development**. The project serves as a professional portfolio showcasing my skills in software development, mobile apps (Flutter), and machine learning.
+## Description
+Portfolio peribadi ini dibina untuk mempamerkan kepakaran saya dalam pembangunan aplikasi mudah alih Flutter, integrasi Kecerdasan Buatan (AI/ML), dan kejuruteraan perisian yang sistematik. Laman ini menampilkan antaramuka moden berkonsepkan *Bento Grid* dan *Glassmorphism* untuk memberikan pengalaman pengguna yang futuristik.
+
+---
 
 ## Features
-- **Responsive Design:** Accessible on both desktop and mobile devices.
-- **Personal Profile:** Details about my technical background and university education.
-- **Technical Blog:** Articles regarding my experience with Flutter and Ubuntu Server.
-- **Contact Form:** A structured way for users to reach out.
+* **Premium UI/UX:** Antaramuka *Bento Grid* dengan kesan *Glassmorphism* dinamik.
+* **Magnetic Interactions:** Kesan kursor premium dan interaksi magnetik pada elemen kad.
+* **Theme Toggle:** Penukaran mod gelap dan cerah yang lancar.
+* **Responsive Design:** Dioptimumkan untuk peranti mudah alih dan desktop.
+* **Smooth Animations:** Menggunakan pustaka AOS (Animate On Scroll) untuk kesan visual yang elegan.
+* **Direct Downloads:** Integrasi pautan muat turun APK terus daripada GitHub Releases.
+
+---
 
 ## Technologies Used
-- **HTML5:** Core structure of the website.
-- **CSS3:** Custom styling and responsive layout using Media Queries.
-- **GitHub:** Version control and project hosting.
+* HTML5 & CSS3 (Modern Flexbox/Grid)
+* Vanilla JavaScript
+* AOS Library
+* Font Awesome
+* GitHub Pages (Hosting)
 
-## How to Run
-1. Clone this repository:
-   ```bash
-   git clone [https://github.com/Zuhairy-Zulkifly/my-personal-blog.git](https://github.com/Zuhairy-Zulkifly/my-personal-blog.git)
+---
+
+## Project Structure
+```text
+zuhairy-portfolio/
+│
+├── index.html
+├── style.css
+└── README.md

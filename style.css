@@ -210,12 +210,14 @@ header{
     justify-content:center;
 
     z-index:1000;
+    padding: 0 10px; /*try gune padding*/
 }
 
 nav{
 
     width:92%;
     max-width:1200px;
+    margin: 0 auto;
 
     padding:14px 24px;
 
@@ -323,7 +325,7 @@ nav a:hover{
 
     text-align:center;
 
-    padding:120px 20px;
+    padding:0 20px;
 }
 
 .hero-content{
@@ -843,80 +845,58 @@ footer{
 }
 
 /* =========================================
-   MOBILE
+   MOBILE RESPONSIVE (FIXED)
 ========================================= */
 
+/* Untuk semua skrin bawah 900px */
 @media(max-width:900px){
-
-    .bento-grid{
-
-        grid-template-columns:1fr;
+    .bento-grid {
+        grid-template-columns: 1fr !important;
     }
-
-    .large{
-
-        grid-column:span 1;
+    .large {
+        grid-column: span 1 !important;
     }
-
-    .form-row{
-
-        grid-template-columns:1fr;
+    .form-row {
+        grid-template-columns: 1fr !important;
     }
 }
 
+/* Untuk semua skrin bawah 768px (Phones) */
 @media(max-width:768px){
+    html { cursor: auto; }
+    .cursor-dot, .cursor-outline { display: none !important; }
 
-    html{
-        cursor:auto;
+    /* Hero & Content */
+    .hero { padding: 80px 20px !important; }
+    .hero h1 { font-size: 3rem !important; }
+    .hero-buttons, .stats { flex-direction: column; gap: 20px; }
+    .hero-content { transform: none !important; }
+
+    /* Navbar Fix - Paksa duduk tengah & kemas */
+    nav { 
+        width: 95% !important; 
+        padding: 10px 15px !important; 
+        justify-content: space-between !important;
     }
-
-    .cursor-dot,
-    .cursor-outline{
-        display:none;
-    }
-
-    .hero-buttons,
-    .stats{
-
-        flex-direction:column;
-
-        gap:20px;
-    }
-
-    .hero h1{
-
-        font-size:4rem;
-    }
-
-    nav ul{
-
-        gap:14px;
-    }
+    nav ul { gap: 8px !important; }
+    nav a { font-size: 0.75rem !important; }
+    .logo { font-size: 0.85rem !important; }
 }
-/* Tambah ini di akhir fail style.css awak */
+
+/* Project Links & Buttons Fix */
 .project-links {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     flex-wrap: wrap;
-    margin-top: 8px;
-}
-
-.download-btn {
-    color: var(--accent2) !important;
-}
-
-.download-btn:hover {
-    filter: brightness(1.2);
-}
-
-.project-links {
+    margin-top: 15px;
     position: relative;
     z-index: 1000 !important;
 }
 
-.project-links a {
-    cursor: pointer !important;
+.read-more {
     pointer-events: auto !important;
-    position: relative;
     z-index: 1001 !important;
+    cursor: pointer !important;
 }
+
+.download-btn { color: var(--accent2) !important; }
