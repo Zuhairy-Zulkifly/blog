@@ -955,26 +955,25 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #fff !important; /* Background putih untuk lapik gambar */
+    background: #fff !important; 
 }
 
 .profile-pic img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Pastikan gambar tak penyek */
+    object-fit: cover; 
     display: block;
 }
 
-/* Optional: Jika awak nak buang background ikon asal */
 .card-icon img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ni kunci utama dia */
+    object-fit: cover; 
     display: block;
 }
 
 .contact-link {
     position: relative;
-    z-index: 10; /* Paksa link duduk paling atas */
+    z-index: 10; 
     cursor: pointer;
 }
