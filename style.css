@@ -217,7 +217,7 @@ nav{
 
     width:92%;
     max-width:1200px;
-    margin: 0 auto;
+    
 
     padding:14px 24px;
 
@@ -325,7 +325,7 @@ nav a:hover{
 
     text-align:center;
 
-    padding:0 20px;
+    padding:120px 20px;
 }
 
 .hero-content{
@@ -681,22 +681,19 @@ section{
     width:58px;
     height:58px;
 
-    border-radius:18px;
+    border-radius:50%;
 
     display:flex;
     justify-content:center;
     align-items:center;
 
-    background:linear-gradient(
-        135deg,
-        var(--accent),
-        var(--accent2)
-    );
+    background:transparent;
+    overflow: hidden;
+    
 
     margin-bottom:24px;
+    border: 2px solid var(--accent);
 
-    box-shadow:
-    0 10px 20px rgba(124,58,237,0.35);
 }
 
 .card h3{
@@ -845,58 +842,133 @@ footer{
 }
 
 /* =========================================
-   MOBILE RESPONSIVE (FIXED)
+   MOBILE
 ========================================= */
 
-/* Untuk semua skrin bawah 900px */
 @media(max-width:900px){
-    .bento-grid {
-        grid-template-columns: 1fr !important;
+
+    .bento-grid{
+
+        grid-template-columns:1fr;
     }
-    .large {
-        grid-column: span 1 !important;
+
+    .large{
+
+        grid-column:span 1;
     }
-    .form-row {
-        grid-template-columns: 1fr !important;
+
+    .form-row{
+
+        grid-template-columns:1fr;
     }
 }
 
-/* Untuk semua skrin bawah 768px (Phones) */
 @media(max-width:768px){
-    html { cursor: auto; }
-    .cursor-dot, .cursor-outline { display: none !important; }
 
-    /* Hero & Content */
-    .hero { padding: 80px 20px !important; }
-    .hero h1 { font-size: 3rem !important; }
-    .hero-buttons, .stats { flex-direction: column; gap: 20px; }
-    .hero-content { transform: none !important; }
-
-    /* Navbar Fix - Paksa duduk tengah & kemas */
-    nav { 
-        width: 95% !important; 
-        padding: 10px 15px !important; 
-        justify-content: space-between !important;
+    html{
+        cursor:auto;
     }
-    nav ul { gap: 8px !important; }
-    nav a { font-size: 0.75rem !important; }
-    .logo { font-size: 0.85rem !important; }
-}
 
-/* Project Links & Buttons Fix */
+    .cursor-dot,
+    .cursor-outline{
+        display:none;
+    }
+
+    .hero-buttons,
+    .stats{
+
+        flex-direction:column;
+
+        gap:20px;
+    }
+
+    .hero h1{
+
+        font-size:4rem;
+    }
+
+    nav ul{
+
+        gap:14px;
+    }
+}
+/* Tambah ini di akhir fail style.css awak */
 .project-links {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     flex-wrap: wrap;
-    margin-top: 15px;
+    margin-top: 8px;
+}
+
+.download-btn {
+    color: var(--accent2) !important;
+}
+
+.download-btn:hover {
+    filter: brightness(1.2);
+}
+
+.project-links {
     position: relative;
     z-index: 1000 !important;
 }
 
-.read-more {
-    pointer-events: auto !important;
-    z-index: 1001 !important;
+.project-links a {
     cursor: pointer !important;
+    pointer-events: auto !important;
+    position: relative;
+    z-index: 1001 !important;
+}
+/* quick fix responsive issue */
+/* FIX UNTUK MOBILE RESPONSIVENESS */
+@media(max-width: 768px) {
+    /* 1. Betulkan menu supaya tidak terlalu lebar */
+    nav ul {
+        gap: 12px !important; /* Kurangkan gap supaya muat skrin */
+    }
+
+    /* 2. Sembunyikan label teks kalau perlu, atau kecilkan font */
+    nav a {
+        font-size: 0.85rem;
+    }
+
+    /* 3. Pastikan logo tidak menolak menu */
+    .logo {
+        font-size: 1rem;
+    }
+
+    /* 4. Pastikan nav tidak melimpah */
+    nav {
+        padding: 10px 16px !important;
+        width: 95% !important; /* Lebarkan sikit di mobile untuk ruang */
+    }
 }
 
-.download-btn { color: var(--accent2) !important; }
+/* Gaya khas untuk bulatan profil */
+.profile-pic {
+    width: 120px !important;
+    height: 120px !important;
+    border-radius: 50% !important; /* Buat jadi bulat */
+    padding: 0 !important;
+    overflow: hidden; /* Potong bahagian gambar yang terkeluar */
+    border: 3px solid var(--accent); /* Frame cantik */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff !important; /* Background putih untuk lapik gambar */
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Pastikan gambar tak penyek */
+    display: block;
+}
+
+/* Optional: Jika awak nak buang background ikon asal */
+.card-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ni kunci utama dia */
+    display: block;
+}

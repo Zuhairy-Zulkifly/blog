@@ -1,82 +1,156 @@
 # Zuhairy Zulkifly – Premium Portfolio
 
 ## Description
-Portfolio peribadi ini dibina untuk mempamerkan kepakaran saya dalam pembangunan aplikasi mudah alih Flutter, integrasi Kecerdasan Buatan (AI/ML), dan kejuruteraan perisian yang sistematik. Laman ini menampilkan antaramuka moden berkonsepkan Bento Grid dan Glassmorphism untuk memberikan pengalaman pengguna yang futuristik.
+
+This portfolio website was developed to showcase my expertise in mobile application development, Artificial Intelligence (AI/ML) integration, and software engineering practices. The portfolio features a modern Bento Grid and Glassmorphism-inspired user interface designed to provide a premium and futuristic user experience.
+
+This project was developed as part of the CSD34203 Special Topics in Software Development course.
 
 ---
 
 ## Features
-* **Premium UI/UX:** Antaramuka Bento Grid dengan kesan Glassmorphism dinamik.
-* **Magnetic Interactions:** Kesan kursor premium dan interaksi magnetik pada elemen kad.
-* **Theme Toggle:** Penukaran mod gelap dan cerah yang lancar.
-* **Responsive Design:** Dioptimumkan untuk peranti mudah alih dan desktop.
-* **Smooth Animations:** Menggunakan pustaka AOS (Animate On Scroll) untuk kesan visual yang elegan.
-* **Direct Downloads:** Integrasi pautan muat turun APK terus daripada GitHub Releases.
+
+* Premium Bento Grid user interface
+* Glassmorphism-inspired design elements
+* Dark and Light Mode toggle
+* Fully responsive layout for desktop and mobile devices
+* Smooth scrolling animations using AOS
+* Interactive magnetic hover effects
+* Project showcase section
+* Downloadable APK integration via GitHub Releases
+* Contact and social media links
 
 ---
 
 ## Technologies Used
-* HTML5 & CSS3 (Modern Flexbox/Grid)
-* Vanilla JavaScript
-* AOS Library
+
+* HTML5
+* CSS3
+* JavaScript (Vanilla JS)
+* AOS (Animate On Scroll)
 * Font Awesome
-* GitHub Pages (Hosting)
+* Google Fonts
+* Git & GitHub
+* GitHub Pages
 
 ---
 
 ## Project Structure
+
 ```text
-zuhairy-portfolio/
+my-personal-blog/
 │
+├── images/
+│   ├── gambaraku.png
+│   └── home.png
+│
+├── .gitignore
 ├── index.html
 ├── style.css
 └── README.md
-Featured Project: SmartTacts
-SmartTacts ialah sistem sokongan taktikal futsal berkuasa AI yang direka untuk membantu jurulatih merancang strategi latihan dan perlawanan secara masa nyata.
+```
+---
 
-Technologies Used:
+## Screenshots
 
-Flutter & Dart
+### Home Page
 
-Python (Scikit-learn)
+![Home Page](images/home.png)
 
-Firebase
+---
 
-Ubuntu Server (Backend Monitoring)
+## Featured Projects
 
-How to Run the Project
-Clone repositori ini:
+### SmartTacts – AI-Powered Futsal Tactical Assistant
 
-Bash
-git clone [https://github.com/Zuhairy-Zulkifly/smarttacts.git](https://github.com/Zuhairy-Zulkifly/smarttacts.git)
-Buka folder projek.
+SmartTacts is an AI-powered futsal tactical support system designed to help coaches analyze opponents' previous performance data and prepare tactical strategies for upcoming matches. The system utilizes machine learning models to provide tactical recommendations based on historical match statistics.
 
-Fail index.html boleh dibuka terus melalui pelayar web atau dihoskan menggunakan GitHub Pages.
+**Technologies Used:**
 
-Challenges Faced
-Responsive Layout: Memastikan susunan Bento Grid kekal kemas pada pelbagai saiz skrin.
+* Flutter
+* Dart
+* Python
+* Scikit-learn
+* Firebase
+* Ubuntu Server
 
-Event Handling: Mengatasi konflik antara skrip magnetik dengan interaksi klik pada butang muat turun.
+### DuitMate – Housemate Expense Manager
 
-UI/UX Optimization: Menyeimbangkan antara kesan visual premium dan prestasi pelayaran yang pantas.
+A mobile application designed to simplify expense management among housemates by tracking shared expenses, calculating balances, and improving financial transparency.
 
-Solutions Implemented
-CSS Media Queries: Menetapkan breakpoints yang spesifik untuk paparan mobile.
+**Technologies Used:**
 
-Z-Index & Pointer-Events: Mengkonfigurasi lapisan CSS untuk memastikan butang boleh diklik walaupun terdapat kesan animasi kursor.
+* Flutter
+* Firebase
+* Dart
 
-Performance Tuning: Mengoptimumkan penggunaan skrip agar tidak membebankan pelayar (browser).
+---
 
-Author
-Zuhairy Zulkifly
-Final Year Undergraduate Student (Software Engineering) – UniSZA
+## How to Run the Project
 
-Focus Areas:
+### Clone the Repository
 
-Flutter Mobile Development
+```bash
+git clone https://github.com/Zuhairy-Zulkifly/blog
+```
 
-AI/Machine Learning Integration
+### Open the Project
 
-System Architecture (SDLC)
+Navigate to the project folder and open:
 
-Modern UI/UX Engineering
+```bash
+index.html
+```
+
+using any modern web browser.
+
+Alternatively, deploy the project using GitHub Pages.
+
+---
+
+## Challenges Faced
+
+* Maintaining responsive Bento Grid layouts across different screen sizes.
+* Implementing magnetic hover interactions without affecting button functionality.
+* Balancing premium visual effects with website performance.
+* Ensuring smooth theme switching between dark and light modes.
+
+---
+
+## Solutions Implemented
+
+* Applied CSS Grid and media queries for responsive layouts.
+* Used pointer-events and z-index management to prevent interaction conflicts.
+* Optimized JavaScript animations to reduce rendering overhead.
+* Utilized localStorage to preserve user theme preferences.
+
+---
+
+## Future Improvements
+
+* Add multilingual support.
+* Integrate project filtering and search functionality.
+* Enhance accessibility compliance.
+* Implement dynamic project loading using JSON data.
+
+---
+
+## Live Demo
+
+https://zuhairy-zulkifly.github.io/blog/ 
+
+---
+
+## Author
+
+### Zuhairy Zulkifly
+
+Final Year  Student in Software Development at UniSZA Besut
+
+**Areas of Interest:**
+
+* Flutter Mobile Development
+* Artificial Intelligence & Machine Learning
+* Software Engineering
+* System Architecture (SDLC)
+* UI/UX Engineering
